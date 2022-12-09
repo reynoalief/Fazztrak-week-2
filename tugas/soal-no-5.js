@@ -1,4 +1,4 @@
-function ubahKonsonan(hurufTarget, hurufPengganti, kalimatsebelum) {
+function ubahvocal(hurufTarget, hurufPengganti, kalimatsebelum) {
   if (typeof kalimatsebelum !== typeof "string") {
     console.log("Tipe data harus String");
   } else {
@@ -9,7 +9,7 @@ function ubahKonsonan(hurufTarget, hurufPengganti, kalimatsebelum) {
     );
   }
 }
-ubahKonsonan("a", "i", "RAynoalief Ridwan Ar Rhojabi");
+ubahvocal("a", "i", "RAynoalief Ridwan Ar Rhojabi");
 
 // let x = typeof "1223";
 // console.log(x);
