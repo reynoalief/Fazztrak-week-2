@@ -9,7 +9,7 @@ function ubahKonsonan(hurufTarget, hurufPengganti, kalimatsebelum) {
     );
   }
 }
-ubahKonsonan("a", "i", "1234");
+ubahKonsonan("a", "i", "saya cinta ibu mega");
 
 // let x = typeof "1223";
 // console.log(x);
