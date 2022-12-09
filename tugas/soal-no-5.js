@@ -1,5 +1,5 @@
 function ubahKonsonan(hurufTarget, hurufPengganti, kalimatsebelum) {
-  if (kalimatsebelum !== "string") {
+  if (typeof kalimatsebelum !== typeof "string") {
     console.log("Tipe data harus String");
   } else {
     let a = kalimatsebelum;
@@ -9,7 +9,7 @@ function ubahKonsonan(hurufTarget, hurufPengganti, kalimatsebelum) {
     );
   }
 }
-ubahKonsonan("a", "i", "saya cinta ibu mega");
+ubahKonsonan("a", "i", "saya cinta bu Mega");
 
 // let x = typeof "1223";
 // console.log(x);
