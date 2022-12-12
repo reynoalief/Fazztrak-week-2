@@ -1,15 +1,17 @@
-function ubahvocal(hurufTarget, hurufPengganti, kalimatsebelum) {
-  if (typeof kalimatsebelum !== typeof "string") {
-    console.log("Tipe data harus String");
+function ubahvocal(huruftarget, hurufPengganti, kalimatsebelum) {
+  let result = "";
+  if (typeof kalimatsebelum !== typeof "string" || kalimatsebelum == "") {
+    result = "Tipe data harus String dan harus terisi kalimat";
   } else {
     let a = kalimatsebelum.toLowerCase();
-    console.log("Kalimat sebelumnya = " + a);
-    console.log(
-      "Kalimat sesudah = " + a.replaceAll(hurufTarget, hurufPengganti)
-    );
+    let replace = a.replaceAll(huruftarget, hurufPengganti);
+    // let kalA = "Kalimat sebelumnya = " + a;
+    result = `Kalimat sebelum = ${a}\nKalimat sesudah = ${replace}
+    `;
   }
+  return result;
 }
-ubahvocal("a", "i", "RAynoalief Ridwan Ar Rhojabi");
+console.log(ubahvocal("a", "i", "M. RAynoalief Ridwan Ar Rhojabi"));
 
 // let x = typeof "1223";
 // console.log(x);
