@@ -1,7 +1,9 @@
 function checkPalindrome(string) {
+  let result = "";
+
   if (string.length < 3) {
     //jika parameter kurang dari 3
-    console.log("Teks atau angka harus lebih dari dua suku/angka");
+    result = "Teks atau angka harus lebih dari dua suku/angka";
   } else {
     const lowercase = string.toLowerCase().replace(/\s/g, "");
 
@@ -11,12 +13,13 @@ function checkPalindrome(string) {
       if (lowercase[i] !== lowercase[len - 1 - i]) {
         // jika parameter ke indeks 0 tidak sama dengan parameter ke indeks 6
         //
-        return console.log("It is not a palindrome"); // maka bukan termasuk palindrome
+        result = "It is not a palindrome"; // maka bukan termasuk palindrome
       }
     }
-    return console.log("It is a palindrome"); // jika parameter ke indeks 0  sama dengan parameter ke indeks 6 dan
+    result = "It is a palindrome"; // jika parameter ke indeks 0  sama dengan parameter ke indeks 6 dan
     //parameter 1 sama dengan 5 dan seterusnya maka dinyatakan palindrome
   }
+  return result;
 }
 
-checkPalindrome("ka ta k");
+console.log(checkPalindrome("racecar"));
